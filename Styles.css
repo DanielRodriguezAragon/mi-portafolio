@@ -104,7 +104,7 @@ line-height: 1.6;
 
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   padding: 22px 0;

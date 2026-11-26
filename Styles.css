@@ -12,6 +12,62 @@
   font-weight: 400;
   font-style: normal;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustes para pantallas de móvil */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 0;
+  }
+
+  body {
+    padding-top: 68px;
+  }
+
+  /* Si tu menú tiene muchos enlaces, evita que se salgan del ancho */
+  .navbar .container,
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
+  .navbar a {
+    font-size: 0.88rem;
+  }
+
+  /* Apila filas de dos columnas y ajusta títulos */
+  .hero-content,
+  .about-grid,
+  .contact-banner-inner {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  h1,
+  .hero-title,
+  .contact-title {
+    font-size: 1.85rem;
+    line-height: 1.2;
+  }
+
+  .btn-contact-primary,
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /*Encabezado de la pagina */
 

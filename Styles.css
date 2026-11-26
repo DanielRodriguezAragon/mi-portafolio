@@ -48,8 +48,18 @@ line-height: 1.6;
 
 
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 22px 0;
+  background-color: rgba(15, 21, 34, 0.92);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-subtle);
+}
+
+section[id],
+footer[id] {
+  scroll-margin-top: 84px;
 }
 
 .nav-content {
